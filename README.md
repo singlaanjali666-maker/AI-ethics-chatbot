@@ -1,125 +1,90 @@
-#  RAG Chatbot using MistralAI & Gemini Embeddings
+HR-AI-Creative-Studio 
 
-##  Overview
-This project implements a **Retrieval-Augmented Generation (RAG) Chatbot** that allows users to interact with documents using natural language. It combines document retrieval with LLM-based responses to provide accurate and context-aware answers.
-
-The chatbot is built using a modular pipeline including text splitting, embeddings, vector storage, and conversational AI.
+An AI-driven design repository featuring professional HR posters and visual assets created using generative AI tools. This project focuses on modern HR themes such as recruitment, employee branding, HR analytics, and future workplace transformation.
 
 ---
 
-##  Features
--  Upload and process PDF documents  
--  Semantic search using embeddings  
-- Conversational AI powered by MistralAI  
--  Context-aware responses using memory  
--  Fast retrieval with in-memory vector store  
-- End-to-end RAG pipeline  
+ Project Overview
+
+This repository showcases how AI tools can be used to design visually engaging and impactful HR posters for corporate communication and branding. It highlights the integration of creativity with technology in Human Resource Management.
 
 ---
 
- Architecture
+ Key Features
 
-The workflow consists of the following components:
-
-1. **Text Splitter**
-   - Recursive Character Text Splitter
-   - Chunk Size: 1000
-   - Overlap: 200
-
-2. **File Loader**
-   - Loads PDF document
-   - Connects with text splitter
-
-3. **Embeddings**
-   - Google Gemini Embeddings (`gemini-embedding-001`)
-   - Converts text into vector representations
-
-4. **Vector Store**
-   - In-Memory Vector Store
-   - Stores embeddings for retrieval
-
-5. **Retriever**
-   - Fetches top relevant chunks (Top K = 4)
-
-6. **LLM (Chat Model)**
-   - MistralAI (`mistral-tiny`)
-   - Generates responses based on retrieved context
-
-7. **Memory**
-   - Buffer Memory for conversation tracking
-
-8. **Conversational Retrieval QA Chain**
-   - Combines retriever + LLM + memory
-   - Produces final chatbot response
+-  AI-generated HR posters and visuals  
+-  Focus on AI-driven recruitment and smart hiring  
+-  Visual representation of HR analytics and dashboards  
+-  Corporate and global workplace themes  
+-  Employer branding and talent acquisition designs  
 
 ---
 
- Workflow
-PDF → Text Splitter → Embeddings → Vector Store → Retriever
-→ MistralAI → Conversational QA Chain → Chatbot Response
-<img width="1847" height="873" alt="rag(2)" src="https://github.com/user-attachments/assets/38dc6d16-5e66-4f8b-a4d7-dae5ccd2a256" />
+ Tools Used
+
+- Adobe AI Tools  
+- Generative AI Platforms (e.g., GenSpark AI)  
+- Prompt Engineering Techniques  
+
+---
+
+ Sample Prompts Used
+
+- *Generate an image showing a happy corporate workplace with employees collaborating, representing a positive work culture.
+- *Create a futuristic HR poster showing AI-driven recruitment processes with dashboards and analytics.*  
+- *Design a corporate visual showcasing HR analytics in decision-making with graphs and data.*  
+- *Create a professional hiring poster for a multinational company targeting management graduates.*
+- <img width="1861" height="794" alt="Screenshot 2026-04-10 155043" src="https://github.com/user-attachments/assets/032d848e-2442-4b30-b9fe-9c8c42141018" />
+<img width="1875" height="724" alt="Screenshot 2026-04-10 155201" src="https://github.com/user-attachments/assets/bbbf8dac-3859-4f08-9159-47ecf8b5068d" />
+
 
 
 ---
 
- Tech Stack
-- **LLM:** MistralAI  
-- **Embeddings:** Google Gemini  
-- **Framework:** LangChain / Flow-based AI tool  
-- **Vector Store:** In-Memory  
-- **Language:** Python  
+ Project Structure
+
+```
+ posters/
+ ├── workplace-culture.png
+ ├── ai-recruitment.png
+ ├── hr-analytics.png
+ └── hiring-campaign.png
+```
 
 ---
 
- Use Case
+ How to Use
 
-This chatbot is designed to answer questions from the document:
-
-**"AI Ethics: Integrating Transparency, Fairness, and Privacy in AI Development"**
-
-It helps users:
-- Understand AI ethics concepts  
-- Explore fairness, transparency, and privacy  
-- Analyze global AI frameworks (EU, US, China)  
+1. Clone the repository  
+   ```
+   git clone https://github.com/your-username/HR-AI-Creative-Studio.git
+   ```
+2. Explore the posters folder  
+3. Use prompts to generate your own designs using AI tools  
 
 ---
 
- Example Query
-What is the document about?
+ Use Cases
 
- Output:
-- Ethical concerns in AI  
-- Key principles: transparency, fairness, privacy  
-- Global AI policy comparisons  
-- Bias mitigation strategies  
+- HR Presentations  
+- Employer Branding Campaigns  
+- Talent Acquisition Marketing  
+- Learning Generative AI in HR  
 
 ---
 
- Setup Instructions
+ Contributing
 
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/rag-chatbot.git
-cd rag-chatbot
-2.Install dependencies:
-pip install -r requirements.txt
-Add API Keys:
-MistralAI API Key
-Google Gemini API Key
-3.Run the project:
-python app.py
-4. Future Improvements
- Persistent vector database (FAISS / Pinecone)
- Web UI integration
- Multi-document support
- Authentication & user sessions
-5. Contributing
+Contributions are welcome! Feel free to fork this repo and add your own AI-generated designs or prompts.
 
-Contributions are welcome! Feel free to fork this repo and submit a pull request.
+---
 
-License
+ License
 
-This project is for educational purposes.
+This project is open-source and available under the MIT License.
+
+---
+
  Author
 
 Anjali singla
